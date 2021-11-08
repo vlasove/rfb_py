@@ -43,3 +43,12 @@ author = "Л.Н.Толстой"
 title = "Война и Мир"
 print(f'Автор {author}, "{title}"')
 print(f"Автор {author}, '{title}'")
+
+
+# Решение E
+drink = "cola"
+meal = "burger and cheese"
+subMeal = "carrot"
+time = "right now"
+
+print(f"I wanna some '{drink}', my favorite meal - '{meal}'. Give me also '{subMeal}'. I will come soon... '{time}'")
