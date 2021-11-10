@@ -73,3 +73,74 @@ a_int = int(input()) # int("10")
 b_int = int(input()) # int("20")
 ...
 ```
+
+### 2. Вещественные числа и операции
+#### Операции
+```
+# Сложение
+sum_float = a_float + b_float
+print("Sum:", sum_float)
+
+# Вычитание
+sub_float = a_float - b_float
+print("Sub:", sub_float)
+
+
+# Умножение
+mult_float = a_float * 10 # Пример неявного приведения 10 к float(10) == 10.0
+print("Mult:", mult_float)
+
+# Деление - всегда вещественное число возвращает
+div_float = a_float / b_float
+print("Div result 10/20:", div_float)
+print("Div result 20/10:", b_float / a_float)
+
+
+# Деление нацело (целочиесленное деление)
+div_round_float = 12.5 // 3.5 
+print("Div round 12.5 // 3.5 :", div_round_float)
+
+
+# Взятие остатка от деления
+mod_float = 7.5 % 2.3
+print("Mod of 7.5 by 2.3:", mod_float)
+
+
+# Вовзведение в степень
+pow_float = 2.5 ** 0.5 # 2.5 ^ 0.5
+print("Val of 2.5^0.5:", pow_float)
+
+```
+
+#### Считывание
+Считывание через явное приведение типов:
+```
+val_str = "10.5"
+val_float = float(val_str)
+```
+
+Для явного приведения строкового значения к вещественному необходимо:
+* 1) чтобы строка состояла ТОЛЬКО из символов цифр
+* 2) допускается ОДИН знак `-` в самом начале строки
+* 3) допускается присутствие ОДНОГО знака точки
+
+```
+a_float = float(input()) # float("10.5")
+b_float = float(input()) # float("-11.4")
+...
+```
+
+
+#### Приведение из/в int
+```
+a_int = 10
+from_a_int_to_float = float(a_int)
+
+print(from_a_int_to_float)
+
+
+c_float = -2222.5555555
+from_c_float_to_int = int(c_float)
+
+print(from_c_float_to_int)
+```
