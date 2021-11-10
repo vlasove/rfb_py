@@ -32,3 +32,7 @@ result_str = f"{result}" # "500"
 result_str_2 = str(500) # "500"
 
 print(result_str + result_str_2)
+
+#
+value_float = 2345678.876545678491231
+result_float = f"{value_float:.3f}"
