@@ -53,3 +53,8 @@ c_float = -2222.5555555
 from_c_float_to_int = int(c_float) # явное приведение типа в int
 
 print(from_c_float_to_int)
+
+
+# Вывод вещественного числа с точностью до n знаков после запятой
+value_float = 2345678.876545678491231
+print(f"{value_float:.3f}")

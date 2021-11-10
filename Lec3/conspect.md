@@ -144,3 +144,5 @@ from_c_float_to_int = int(c_float)
 
 print(from_c_float_to_int)
 ```
+
+#### Вывод вещественного числа с заданной точностью
