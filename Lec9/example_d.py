@@ -17,4 +17,5 @@ while True:
     bus_num_int = int(bus_num_str)
     to_home.add(bus_num_int)
 
-# Здесь надо дописать логику
+intersect = to_home.intersection(to_park) # Номера автобусов туда-обратно
+print(len(intersect)) # Количество автобусов
