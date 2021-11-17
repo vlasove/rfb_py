@@ -3,12 +3,12 @@
 n = int(input())
 sum = 0
 # n = 5
-# 1,2,3,4,5
-# Ряд: 1 - 2 + 3 - 4 + 5
-# i  : 0   1   2   3   4
+# 10, 20, 30, 40, 50 -> считываем из консоли
+# Ряд: 10 - 20 + 30 - 40 + 50 = 30
+# i  : 0    1    2    3    4
 
 for i in range(n):
-    numeric = int(input())
+    numeric = int(input()) # 10, 20, 30....
     if i % 2 == 0:
         sum += numeric
     else:
