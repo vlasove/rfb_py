@@ -12,7 +12,7 @@ for i in range(10, 2, 3):
 
 
 # В случае декремента переменной (уменьшения значения)
-# start < stop, step <0
+# start > stop, step <0
 for i in range(10, -1, -1):
     print("Current in descend for loop:", i)
 
