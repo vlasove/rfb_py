@@ -14,6 +14,6 @@ for day in range(n_days):
     if day == 0:
         total_set = total_set.union(set_students_in_ths_day)
     else:
-        ...
+        total_set = total_set.intersection(set_students_in_ths_day)
 
-# Дописать
+print(len(total_set))
