@@ -18,13 +18,16 @@ for elem in a_set:
 
 
 ### 3. Удаление элементов
+* Удаление по значению `.remove(val)`
 ```
 # Удаление элементов (по значению)
 to_delete = 10
 if to_delete in a_set:
     a_set.remove(to_delete)
+```
 
-
+* Удаление случайного элемента `.pop()` (возвращает удаленное значение)
+```
 # Удаление случайного
 res = a_set.pop()
 print("Deleted elem via pop():", res)
