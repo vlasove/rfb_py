@@ -3,7 +3,6 @@
 n_days = int(input())
 total_set = set()
 
-
 for day in range(n_days):
     m_students_in_this_day = int(input())
     set_students_in_ths_day = set()
