@@ -36,3 +36,23 @@ print("Sum:", sum(input_list_int))
 * `sep.join(lst[str])` - в результате вернет строку, состоящую из элементов списка `lst` разделенных между собой `sep` (`lst[0]+set+lst[1] + sep + lst[2] + sep + ..)`
 * `sep` - это строка!
 * `lst[str]` - список строк!
+
+* Пример использования `join`
+```
+# Пример `.join()`
+
+words = ["aaa", "bbb", "ccc"]
+message = "-@-".join(words)
+print(message)
+```
+
+* Пример использования `join` в задаче конкатенации целых чисел:
+```
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for i in range(len(nums)):
+    nums[i] = str(nums[i])
+
+output = " ".join(nums)
+print(output)
+```
