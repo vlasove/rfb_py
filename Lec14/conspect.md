@@ -56,3 +56,15 @@ for i in range(len(nums)):
 output = " ".join(nums)
 print(output)
 ```
+
+### 3. Списочные выражение и методы split/join
+* Решение задачи с методом `split`:
+```
+print("Sum:", sum([int(letter) for letter in "1 2 3 4 5 6 7 8 9 10".split()]))
+```
+
+* Решение задачи с методом `join`:
+```
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(", ".join([str(elem) for elem in nums]))
+```
