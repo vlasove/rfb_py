@@ -17,3 +17,6 @@ for event in events:
     elif "Кто последний?" in event:
         temp_lst = event.split(" - ") # ["Кто последний? Я", "Кузнецов."]
         queue.append(temp_lst[-1].split(".")[0]) # ["Кузнецов", ""][0]
+    elif "Я только спросить" in event:
+        temp_lst = event.split(" - ") # ["Я только спросить! Я", "Иванова."]
+        queue.insert(0, temp_lst[-1].split(".")[0]) # ["Иванова", ""][0]
