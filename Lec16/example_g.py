@@ -44,3 +44,5 @@ for _ in range(n):
         print(f"В {month} дни рождения в даты:", sorted_dates)
     else:
         print("Месяц не найден в словаре!")
+
+print() # Вывод пустой строчки
