@@ -26,7 +26,7 @@ temp3 = lambda x, y : x - y
 print("Def:", temp1)
 print("Lambda:", temp2)
 
-print((lambda x: x ** 2)(2))
+(lambda x: x ** 2)(2)
 
 # Пример использования
 res = [(lambda x : x + 100)(elem) for elem in range(1, 10)]
