@@ -24,6 +24,9 @@ def factorial(n):
     return res
 
 
+def commbination(n ,m):
+    return int(factorial(n) / (factorial(m) * (factorial(n-m))))
+
 print_factorials(1, 15)
 
 
