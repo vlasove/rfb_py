@@ -1,25 +1,52 @@
-def add(a,b):
-                    return a +                b
+"""Модуль содержащий набор функций для простейших операций с целыми числами."""
 
-def sub(c, c1):
+import math
+import sys
+from typing import List
 
-
-
- return c + c1
-
-
-def mult(x,y         ):
-    return                         x                        *                     y
+import calculator
 
 
-def деление(o, o2):
- return o // o2
+def add(x_arg: int, y_arg: int) -> int:
+    """Сложение x_arg + y_arg."""
+    return x_arg + y_arg
 
 
-def main():
-    a,b = int(input().strip()), int(input().strip())
-    result = add(a,b) + add(b,a) + sub(add(a,a), mult(b,b)) - деление(b,a) ** 2 + add(a,b) + add(b,a) + sub(add(a,a), mult(b,b)) - деление(b,a) ** 2
+def sub(x_arg: int, y_arg: int) -> int:
+
+    """
+    Вычитание x_arg - y_arg.
+    """
+    return x_arg + y_arg
+
+
+def mult(x_arg: int, y_arg: int) -> int:
+    """
+    Умножение x_arg * y_arg.
+    """
+    return x_arg * y_arg
+
+
+def div(x_arg: int, y_arg: int) -> int:
+    """Деление нацело x_arg // y_arg."""
+    return x_arg // y_arg
+
+
+def main() -> None:
+    """Основная точка входа в программу."""
+    num_a, num_b = int(input().strip()), int(input().strip())
+    result = (
+        add(num_a, num_b)
+        + add(num_b, num_a)
+        + sub(add(num_a, num_a), mult(num_b, num_b))
+        - div(num_b, num_a) ** 2
+        + add(num_a, num_b)
+        + add(num_b, num_a)
+        + sub(add(num_a, num_a), mult(num_b, num_b))
+        - div(num_b, num_a) ** 2
+    )
     print(result)
 
-if __name__ == '__main__':
-    main() 
+
+if __name__ == "__main__":
+    main()
