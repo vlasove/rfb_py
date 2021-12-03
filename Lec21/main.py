@@ -6,7 +6,6 @@ from typing import List
 
 import calculator
 
-
 def add(x_arg: int, y_arg: int) -> int:
     """Сложение x_arg + y_arg."""
     return x_arg + y_arg
