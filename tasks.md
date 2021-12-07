@@ -122,6 +122,12 @@
 #### Повышенной сложности
 * -
 
+### День 11
+**Ссылка** https://contest.yandex.ru/contest/33143/problems/
+
+#### Обязательные задачи
+* A-D
+
 
 ### Финальный проект
 **Ссылка**: https://contest.yandex.ru/contest/32366/problems/
